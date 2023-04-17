@@ -1,0 +1,26 @@
+version: '3.7'
+services:
+  dev-web-boakomart:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: gitlab.vascomm.co.id:4567/akomart/backoffice:latest_dev
+    volumes:
+      - ./:/var/www/html
+      - ./nginx-conf/default.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx-conf/nginx.conf:/etc/nginx/nginx.conf
+      - /var/www/html/vendor
+      - /home/apps/config_env/web_bo_akomart/.env:/var/www/html/.env
+    container_name: dev-web-boakomart
+    ports:
+      - 12444:80
+    tty: true
+    restart: always
+
+    networks:
+      - vascomm-app
+  
+networks:
+  vascomm-app:
+    name: vascomm-app
+    driver: bridge

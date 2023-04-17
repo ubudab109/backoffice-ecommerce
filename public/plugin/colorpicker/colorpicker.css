@@ -1,0 +1,117 @@
+            /* reset */
+            
+            article, aside, details, figcaption, figure, 
+            footer, header, hgroup, menu, nav, section {
+                display: block;
+            }
+            body {
+                line-height: 1;
+            }
+            ol, ul {
+                list-style: none;
+            }
+            blockquote, q {
+                quotes: none;
+            }
+            blockquote:before, blockquote:after,
+            q:before, q:after {
+                content: '';
+                content: none;
+            }
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+            /* CSS */
+            body {
+                background-color: #222;
+                margin-bottom: 25px;
+                font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
+            /* rule box */
+            .rule-box {
+                position: absolute;
+                background-color: #444;
+                border-radius: 10px;
+            }
+            .rule-box h4 {
+                color: #BBB;
+                font-size: 14pt;
+                margin: 0;
+                padding: 10px;
+                background-color: #333;
+                border-radius: 10px;
+            }
+            #rules {
+                color: #AAA;
+                margin: 0;
+                padding: 10px;
+                list-style: none;
+            }
+            #rules li {
+                cursor: pointer;
+                margin: 10px;
+            }
+            #rules li:hover {
+                color: #DDD;
+            }
+            #rules li.active, #rules li.active:hover {
+                color: #EEE;
+            }
+            /* picker canvas */
+            .canvas {
+                text-align: center;
+            }
+
+            /* samples */
+            .samples {
+                text-align: center;
+                margin-top: 50px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+            }
+            .samples .sample{
+                margin-top: -50px;
+                border-radius: 5px;
+            }
+            .samples .col {
+                display: inline-block;
+                color: #CBCBCB;
+                font-family: "Courier New", Courier, monospace;
+                background-color: #717D7E;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -o-box-sizing: border-box;
+                -ms-box-sizing: border-box; 
+            }
+            .samples .col:first-of-type {
+                margin-left: 0;
+            }
+            .samples .selected {
+                border: 1px solid #FFF;
+            }
+            .samples .input-group {
+                margin: 5px auto;
+            }
+            .samples .input-group input[type="text"] {
+                color: #CBCBCB;
+                font-size: 85%;
+                text-align: center;
+                padding: 6px 0px;
+                background-color: #222;
+                border: 0 none;
+            }
+            .samples .hex {
+                width: 98px;
+            }
+            .samples .rgb {
+                width: 35px;
+                margin-left: -6px;
+            }
+            .samples .rgb:first-of-type {
+                margin-left: 0;
+            }
+            .samples .sample {
+                height: 175px;
+            }

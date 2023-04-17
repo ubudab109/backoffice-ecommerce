@@ -1,0 +1,172 @@
+@media only screen and (max-width: 575px) {
+    .modal-sign-up {
+        max-width: 100%;
+    }
+    .wrapper-mobile-nav {
+        padding: 0px 15px;
+    }
+
+    .tabs-edit-profile-mobile a.nav-link {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        height: 55px;
+        min-width: 55px;
+        background-color: #F5F8FA;
+        border-radius: 50%;
+    }
+    .tabs-edit-profile-mobile a.nav-link p {
+        display: none;
+    }
+    .tabs-edit-profile-mobile a.nav-link.active {
+        background-color: #df0e2c;
+        border-radius: 30px;
+    }
+    .tabs-edit-profile-mobile a.nav-link.active p {
+        display: block;
+    }
+    .tabs-edit-profile-mobile a.nav-link img {
+        margin-right: 0px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .profile-dropdown {
+        display: none;
+    }
+    .profile-dropdown-mobile {
+        display: block;
+    }
+
+    .wrapper-mobile-nav {
+        height: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .wrapper-mobile-nav .navbar-toggler {
+        border: none;
+        background: white;
+        height: 40px;
+        width: 40px;
+    }
+    .wrapper-mobile-nav .navbar-toggler svg {
+        fill: #828282;
+    }
+    .wrapper-mobile-nav .navbar-toggler svg:hover {
+        fill: #050401;
+    }
+    #navbarSupportedContent {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        /* right: -470px; */
+        background: white;
+        width: 0;
+        z-index: 16;
+        /* padding-left: 15px; */
+        /* padding-right: 15px; */
+        height: 100vh;
+        transition: 0.5s;
+    }
+    #navbarSupportedContent .mobile-nav-head {
+        height: 75px;
+        display: flex;
+        align-items: center;
+        padding-left: 23px;
+    }
+    #navbarSupportedContent .mobile-nav-head .navbar-btn-mobile {
+        display: block;
+        height: 40px;
+        width: 40px;
+        border: none;
+        background: white;
+    }
+    #navbarSupportedContent .mobile-nav-head .navbar-btn-mobile svg {
+        fill: #828282;
+    }
+    #navbarSupportedContent .mobile-nav-head .navbar-btn-mobile svg:hover {
+        fill: #050401;
+    }
+    #navbarSupportedContent .nav-item {
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+    #navbarSupportedContent .nav-item.active {
+        padding-left: 20px;
+        border-bottom: 0px;
+        border-left: 6px solid #df0e2c;
+    }
+    #navbarSupportedContent .nav-item .nav-link {
+        font-size: 28px;
+    }
+    #navbarSupportedContent .form-inline {
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+
+    .tabs-edit-profile {
+        display: none;
+    }
+    .tabs-edit-profile-mobile {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-header .toggel-btn.mbl {
+        margin-left: 0px !important;
+    }
+
+    .main-header .toggel-btn {
+        display: none !important;
+    }
+
+    .main-header .logo.mbl {
+        margin-left: 0px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-header .logo {
+        margin-left: calc(100% - 260px);
+        display: none !important;
+    }
+
+    .main-header {
+        height: 70px;
+        display: flex;
+        align-items: center;
+    }
+
+    section.section-logo-mobile {
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+    }
+    section.section-logo-mobile a .logo-sidebar {
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+    section.section-logo-mobile button {
+        background: transparent;
+        border: none;
+    }
+
+    .content-wrapper{
+        margin-left: 0 !important;
+        margin-top: 70px !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .main-header .logo {
+        width: 80px;
+    }
+    .main-header .logo a span p {
+        display: hidden;
+    }
+}
+
